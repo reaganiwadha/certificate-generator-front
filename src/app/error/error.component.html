@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+<div class="row d-flex justify-content-center mt-5">
+  <div class="col-md-5 text-center">
+    <i class="fa fa-exclamation-triangle fa-4x" aria-hidden="true"></i>
+    <h1 *ngIf="!genericError">{{errorCode}}</h1>
+    <h1 [ngClass]="{'mt-2': genericError}" >Uh oh!</h1>
+    <p>{{errorMessage}}</p>
+    <button type="button" class="col" routerLink="/">Back to home</button>
+
+  </div>
+</div>

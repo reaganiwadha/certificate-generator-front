@@ -65,6 +65,7 @@ export class SignupComponent implements OnInit {
          },
          error => {
            this.error = error.error.non_field_errors;
+           this.router.navigate(['/error']);
          }
        );
     } else {
